@@ -17,3 +17,4 @@ function testVars() {
 /*
 Wnioski:
 */
+console.log(one);
