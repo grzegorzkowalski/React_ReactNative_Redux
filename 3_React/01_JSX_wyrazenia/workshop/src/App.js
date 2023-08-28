@@ -17,6 +17,7 @@ import CurrencyConverter from "./components/Chapter5/CurrencyConverter";
 import ParentComponent from "./components/Chapter6/ParentComponent";
 import ChildComponent from "./components/Chapter6/ChildComponent";
 import GrandchildComponent from "./components/Chapter6/GrandchildComponent";
+import ShopItem from "./components/Chapter6/ShopItem";
 
 function App() {
     const menuElements = [
@@ -37,6 +38,12 @@ function App() {
             text: "Kontakt"
         }
     ];
+    const item = {
+        title: "MacBook Pro",
+        image: "https://upload.wikimedia.org/wikipedia/commons/9/9f/M2_Macbook_Air_Starlight_model.jpg",
+        description: "Moc i mobilność – MacBook Pro wyraźnie podnosi tu poprzeczkę. Teraz możesz jeszcze szybciej realizować swoje pomysły. Pomogą Ci w tym wydajne procesory i układy pamięci, zaawansowana grafika, błyskawicznie działająca pamięć masowa i inne doskonałe rozwiązania.",
+        price: 9999
+    };
 
   return (
     <div className="App">
@@ -48,26 +55,27 @@ function App() {
         {/*<Chapter2Task1 />*/}
         {/*<Chapter3Task3 />*/}
         {/*<Chapter3Task4 />*/}
-        <Search />
-        <LikeBox likes={300}/>
-        <LikeBox likes={234}/>
-        <LikeBox likes={123}/>
-        <Menu elements={menuElements} />
-        <Hello name="Grzegorz" surnname="Kowalski" />
-        <Hello name="Johny" surnname="Rambo" />
-        <Hello name="Iga" surnname="Świątek" />
-        <AddNumbers numberA={5} numberB={7} numberC={12} />
-        <Sum numbers={[1,2,3,4]} />
-        <CurrencyConverter from="EUR" to="USD" value={200} rate={1.12275} />
-        <CurrencyConverter from="EUR" to="PLN" value={200} rate={4.5} />
-        <CurrencyConverter from="EUR" to="CZK" value={200} rate={24} />
-        <ParentComponent>
-            <ChildComponent>
-                <GrandchildComponent>
-                    <h4>To działa!</h4>
-                </GrandchildComponent>
-            </ChildComponent>
-        </ParentComponent>
+        {/*<Search />*/}
+        {/*<LikeBox likes={300}/>*/}
+        {/*<LikeBox likes={234}/>*/}
+        {/*<LikeBox likes={123}/>*/}
+        {/*<Menu elements={menuElements} />*/}
+        {/*<Hello name="Grzegorz" surnname="Kowalski" />*/}
+        {/*<Hello name="Johny" surnname="Rambo" />*/}
+        {/*<Hello name="Iga" surnname="Świątek" />*/}
+        {/*<AddNumbers numberA={5} numberB={7} numberC={12} />*/}
+        {/*<Sum numbers={[1,2,3,4]} />*/}
+        {/*<CurrencyConverter from="EUR" to="USD" value={200} rate={1.12275} />*/}
+        {/*<CurrencyConverter from="EUR" to="PLN" value={200} rate={4.5} />*/}
+        {/*<CurrencyConverter from="EUR" to="CZK" value={200} rate={24} />*/}
+        {/*<ParentComponent>*/}
+        {/*    <ChildComponent>*/}
+        {/*        <GrandchildComponent>*/}
+        {/*            <h4>To działa!</h4>*/}
+        {/*        </GrandchildComponent>*/}
+        {/*    </ChildComponent>*/}
+        {/*</ParentComponent>*/}
+          <ShopItem item={item} />
       </header>
     </div>
   );
