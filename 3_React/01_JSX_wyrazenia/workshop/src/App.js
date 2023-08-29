@@ -18,6 +18,7 @@ import ParentComponent from "./components/Chapter6/ParentComponent";
 import ChildComponent from "./components/Chapter6/ChildComponent";
 import GrandchildComponent from "./components/Chapter6/GrandchildComponent";
 import ShopItem from "./components/Chapter6/ShopItem";
+import ShopList from "./components/Chapter6/ShopList";
 
 function App() {
     const menuElements = [
@@ -44,6 +45,22 @@ function App() {
         description: "Moc i mobilność – MacBook Pro wyraźnie podnosi tu poprzeczkę. Teraz możesz jeszcze szybciej realizować swoje pomysły. Pomogą Ci w tym wydajne procesory i układy pamięci, zaawansowana grafika, błyskawicznie działająca pamięć masowa i inne doskonałe rozwiązania.",
         price: 9999
     };
+    const shopItems = [
+        {
+            title: "Mysz komputerowa",
+            image: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Red_computer_mouse.jpg"
+        },
+        {
+            title: "Klawiatura",
+            image:
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Computer_keyboard_Danish_layout.svg/1000px-Computer_keyboard_Danish_layout.svg.png"
+        },
+        {
+            title: "Laptop programisty",
+            image:
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Typing_computer_screen_reflection.jpg/640px-Typing_computer_screen_reflection.jpg"
+        }
+    ];
 
   return (
     <div className="App">
@@ -75,7 +92,8 @@ function App() {
         {/*        </GrandchildComponent>*/}
         {/*    </ChildComponent>*/}
         {/*</ParentComponent>*/}
-          <ShopItem item={item} />
+        <ShopItem item={item} />
+        <ShopList shopItems={shopItems} />
       </header>
     </div>
   );
