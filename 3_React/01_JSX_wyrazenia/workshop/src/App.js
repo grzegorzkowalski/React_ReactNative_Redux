@@ -19,6 +19,8 @@ import ChildComponent from "./components/Chapter6/ChildComponent";
 import GrandchildComponent from "./components/Chapter6/GrandchildComponent";
 import ShopItem from "./components/Chapter6/ShopItem";
 import ShopList from "./components/Chapter6/ShopList";
+import HelloWorld from "./components/Chapter7/HelloWorld";
+import Box from "./components/Chapter7/Box";
 
 function App() {
     const menuElements = [
@@ -92,8 +94,10 @@ function App() {
         {/*        </GrandchildComponent>*/}
         {/*    </ChildComponent>*/}
         {/*</ParentComponent>*/}
-        <ShopItem item={item} />
-        <ShopList shopItems={shopItems} />
+        {/*<ShopItem item={item} />*/}
+        {/*<ShopList shopItems={shopItems} />*/}
+        <HelloWorld />
+        <Box />
       </header>
     </div>
   );
