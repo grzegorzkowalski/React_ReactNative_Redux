@@ -25,6 +25,9 @@ import Modal from "./components/Chapter7/Modal";
 import Clock from "./components/Chapter7/Clock";
 import Buttons from "./components/Chapter8/Buttons";
 import ShowUserFunc from "./components/Chapter8/ShowUserFunc";
+import TextTyper from "./components/Chapter8/TextTyper";
+import ColorfulBoxes from "./components/Chapter8/ColorfulBoxes";
+import ButtonCounter from "./components/Chapter9/ButtonCounter";
 
 function App() {
     const menuElements = [
@@ -108,6 +111,9 @@ function App() {
         <ShowUserFunc name="Grzegorz" surname="Kowalski" />
         <ShowUserFunc name="Micheal" surname="Jordan" />
         <ShowUserFunc name="Michał" surname="Wiśniewski" />
+        <TextTyper text="Witaj!" />
+        <ColorfulBoxes />
+        <ButtonCounter />
       </header>
     </div>
   );
