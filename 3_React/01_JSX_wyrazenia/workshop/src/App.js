@@ -21,6 +21,10 @@ import ShopItem from "./components/Chapter6/ShopItem";
 import ShopList from "./components/Chapter6/ShopList";
 import HelloWorld from "./components/Chapter7/HelloWorld";
 import Box from "./components/Chapter7/Box";
+import Modal from "./components/Chapter7/Modal";
+import Clock from "./components/Chapter7/Clock";
+import Buttons from "./components/Chapter8/Buttons";
+import ShowUserFunc from "./components/Chapter8/ShowUserFunc";
 
 function App() {
     const menuElements = [
@@ -96,8 +100,14 @@ function App() {
         {/*</ParentComponent>*/}
         {/*<ShopItem item={item} />*/}
         {/*<ShopList shopItems={shopItems} />*/}
-        <HelloWorld />
-        <Box />
+        {/*<HelloWorld />*/}
+        {/*<Box />*/}
+        {/*<Modal heading="Zapisz się do newslettera"/>*/}
+        {/*<Clock />*/}
+        <Buttons />
+        <ShowUserFunc name="Grzegorz" surname="Kowalski" />
+        <ShowUserFunc name="Micheal" surname="Jordan" />
+        <ShowUserFunc name="Michał" surname="Wiśniewski" />
       </header>
     </div>
   );
