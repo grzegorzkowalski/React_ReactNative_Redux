@@ -32,6 +32,10 @@ import Shop from "./components/Chapter9/Shop";
 import TODO from "./components/Chapter9/TODO";
 import MyButton from "./components/Chapter10/MyButton";
 import NumberInfo from "./components/Chapter10/NumberInfo";
+import NumberRandomInfo from "./components/Chapter10/NumberRandomInfo";
+import SecretStuff from "./components/Chapter10/SecretStuff";
+import Hello2 from "./components/Chapter11/Hello";
+import SelectOrType from "./components/Chapter11/SelectOrType";
 
 function App() {
     const menuElements = [
@@ -118,12 +122,25 @@ function App() {
         {/*<TextTyper text="Witaj!" />*/}
         {/*<ColorfulBoxes />*/}
         {/*<ButtonCounter />*/}
-        <Shop />
-        <TODO />
-        <MyButton />
-          {
-              [1,2,5,7,10,16].map((el, i) => <NumberInfo number={el} key={i} />)
-          }
+        {/*<Shop />*/}
+        {/*<TODO />*/}
+        {/*<MyButton />*/}
+        {/*  {*/}
+        {/*      [1,2,5,7,10,16].map((el, i) => <NumberInfo number={el} key={i} />)*/}
+        {/*  }*/}
+        {/*<NumberRandomInfo />*/}
+        {/*<SecretStuff*/}
+        {/*    secret="Lubie placki"*/}
+        {/*    password="Test1234"*/}
+        {/*    correctPassword="Test1234"*/}
+        {/*/>*/}
+        {/*<SecretStuff*/}
+        {/*    secret="Nie lubię szpinaku"*/}
+        {/*    password="Test1234555"*/}
+        {/*    correctPassword="Test1234"*/}
+        {/*/>*/}
+        {/*<Hello2 />*/}
+        <SelectOrType items={["BMW", "Jaguar", "Porsche"]} />
       </header>
     </div>
   );
